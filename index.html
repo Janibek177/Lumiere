@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumiere - Sleep Reimagined</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="img/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVQ17I311oNQLLYfVHNrbViyhu4QaOXDfB4DJlaU3dg&s=10">
+</head>
+<body>
+
+<nav>
+    <div class="logo">LUMIÈRE</div>
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Story</a></li>
+        <li><a href="#shop">Collection</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="open-cart" class="nav-cart-btn">Cart (<span id="cart-count">0</span>)</button>
+</nav>
+
+<div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+        <div class="total-row">
+            <span>Total</span>
+            <span>$<span id="cart-total">0.00</span></span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+</div>
+
+<section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Master Your Sleep.</h1>
+        <p>Architectural support meets cloud-like comfort. Discover the last pillow you will ever need.</p>
+        <a href="#shop" class="btn-primary">Explore Collection</a>
+    </div>
+</section>
+
+<section id="about" class="bg-light">
+    <div class="container grid-half">
+        <div class="text-block">
+            <span class="subtitle">Our Vision</span>
+            <h2>Redefining Rest</h2>
+            <p>We spent three years analyzing sleep biomechanics to engineer a pillow that adapts perfectly to your anatomy. No compromises, just pure restorative sleep wrapped in minimalist design.</p>
+        </div>
+        <div class="image-block">
+            <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800&q=80" alt="Lumiere Minimalist Pillow">
+        </div>
+    </div>
+</section>
+
+<section id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">The Engineering</span>
+            <h2>Form Follows Function</h2>
+        </div>
+        <div class="grid-three">
+            <div class="icon-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_pYXPpXaxVg09Bqu2JLAHthv8ZsXxef-YRL4e7JoSg&s=10" alt="Breathability">
+                <h3>Thermal Regulation</h3>
+                <p>Micro-ventilation channels actively dissipate heat throughout the night.</p>
+            </div>
+            <div class="icon-card">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=400&q=80" alt="Support">
+                <h3>Cervical Alignment</h3>
+                <p>Precision-molded core maintains the natural curve of your spine.</p>
+            </div>
+            <div class="icon-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTa_kl72Fu437qv4WwdJ2_8CY2AcyJa7-azYmWwlGnQ&s=10" alt="Hygiene">
+                <h3>Absolute Purity</h3>
+                <p>Woven with antimicrobial silver threads to prevent dust and allergens.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="materials" class="bg-light">
+    <div class="container grid-half reverse">
+        <div class="text-block">
+            <span class="subtitle">Raw Elements</span>
+            <h2>Sourced With Purpose</h2>
+            <p>From organic crushed latex to ethically sourced bamboo silk, every material is selected for durability, sustainability, and ultimate tactile luxury.</p>
+        </div>
+        <div class="image-block">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyycXmi0b-VOcqqsO7nVRc78Fd56psqCORRerVmo4pbA&s=10" alt="Premium Fabric Texture">
+        </div>
+    </div>
+</section>
+
+<section id="shop">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Store</span>
+            <h2>The Collection</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=500&q=80" alt="Lumiere Essential">
+                </div>
+                <div class="product-info">
+                    <h3>The Essential</h3>
+                    <p class="price">$65.00</p>
+                    <button class="add-cart-btn" data-name="The Essential" data-price="65">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&q=80" alt="Lumiere Contour">
+                </div>
+                <div class="product-info">
+                    <h3>The Contour</h3>
+                    <p class="price">$85.00</p>
+                    <button class="add-cart-btn" data-name="The Contour" data-price="85">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA07vPIxBeKAyB6ZvYpUGy9a7xF5arXGXaeyvxq4sYkg&s=10" alt="Lumiere Arctic">
+                </div>
+                <div class="product-info">
+                    <h3>The Arctic Gel</h3>
+                    <p class="price">$95.00</p>
+                    <button class="add-cart-btn" data-name="The Arctic Gel" data-price="95">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO-JQ80NNuNhtbaldQeEQ6YPu3OvaJei1wcff3Qfm0Q&s" alt="Lumiere Bamboo">
+                </div>
+                <div class="product-info">
+                    <h3>The Bamboo Hybrid</h3>
+                    <p class="price">$75.00</p>
+                    <button class="add-cart-btn" data-name="The Bamboo Hybrid" data-price="75">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLn-_CGodyGmYFrpnH8WWB8Lj8W91MjzkG78fR-gjmg&s=10" alt="Lumiere Silk">
+                </div>
+                <div class="product-info">
+                    <h3>The Silk Cloud</h3>
+                    <p class="price">$110.00</p>
+                    <button class="add-cart-btn" data-name="The Silk Cloud" data-price="110">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&q=80" alt="Lumiere Travel">
+                </div>
+                <div class="product-info">
+                    <h3>The Voyager</h3>
+                    <p class="price">$45.00</p>
+                    <button class="add-cart-btn" data-name="The Voyager" data-price="45">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=500&q=80" alt="Lumiere Body">
+                </div>
+                <div class="product-info">
+                    <h3>The Gravity Body</h3>
+                    <p class="price">$130.00</p>
+                    <button class="add-cart-btn" data-name="The Gravity Body" data-price="130">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbn8-02qsk3gOSeX_uxcKkLamnTQf6033NgmGhTtZww&s=10" alt="Lumiere Junior">
+                </div>
+                <div class="product-info">
+                    <h3>The Junior Soft</h3>
+                    <p class="price">$55.00</p>
+                    <button class="add-cart-btn" data-name="The Junior Soft" data-price="55">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQzZIFLSSAoM0BI5Mbxk9h-6Qa8vBPb4uwcztJ5-UZYtuSy7sAatwWfY&s=10" alt="Lumiere Maternity">
+                </div>
+                <div class="product-info">
+                    <h3>The Maternity Arc</h3>
+                    <p class="price">$120.00</p>
+                    <button class="add-cart-btn" data-name="The Maternity Arc" data-price="120">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&q=80" alt="Lumiere Lounge">
+                </div>
+                <div class="product-info">
+                    <h3>The Lounge Wedge</h3>
+                    <p class="price">$90.00</p>
+                    <button class="add-cart-btn" data-name="The Lounge Wedge" data-price="90">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=500&q=80&auto=format&fit=crop&crop=bottom" alt="Lumiere Organic">
+                </div>
+                <div class="product-info">
+                    <h3>The Organic Latex</h3>
+                    <p class="price">$140.00</p>
+                    <button class="add-cart-btn" data-name="The Organic Latex" data-price="140">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&q=80&auto=format&fit=crop&crop=top" alt="Lumiere Down">
+                </div>
+                <div class="product-info">
+                    <h3>The Royal Down</h3>
+                    <p class="price">$160.00</p>
+                    <button class="add-cart-btn" data-name="The Royal Down" data-price="160">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Aesthetic</span>
+            <h2>In Its Element</h2>
+        </div>
+        <div class="gallery-masonry">
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&q=80" alt="Interior 1">
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&q=80" alt="Interior 2">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&q=80&auto=format&fit=crop&crop=top" alt="Interior 3">
+        </div>
+    </div>
+</section>
+
+<section id="care">
+    <div class="container grid-half">
+        <div class="image-block">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80" alt="Washing instructions">
+        </div>
+        <div class="text-block">
+            <span class="subtitle">Maintenance</span>
+            <h2>Care & Longevity</h2>
+            <p>Our pillows are designed for effortless maintenance. The exterior shield unzips smoothly and is fully machine washable at 30°C. Keep the internal core dry and aerated for maximum lifespan.</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" class="bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Testimonials</span>
+            <h2>Words of Comfort</h2>
+        </div>
+        <div class="grid-three">
+            <div class="review-box">
+                <div class="stars">★★★★★</div>
+                <p>"An absolute masterpiece of design and function. My neck pain vanished on the second night."</p>
+                <h4>Jonathan Brooks</h4>
+            </div>
+            <div class="review-box">
+                <div class="stars">★★★★★</div>
+                <p>"Visually stunning on my bed and incredibly supportive. Worth every single cent."</p>
+                <h4>Sarah Jenkins</h4>
+            </div>
+            <div class="review-box">
+                <div class="stars">★★★★★</div>
+                <p>"The cooling technology is brilliant. I sleep deeply through the entire night now."</p>
+                <h4>David Chen</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="container faq-container">
+        <div class="section-header">
+            <span class="subtitle">Knowledge</span>
+            <h2>Common Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>What is your return policy?</h3>
+                <p>We offer a 100-night sleep trial. If you are not completely satisfied, return it for a full refund.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does shipping take?</h3>
+                <p>Standard delivery takes 2-4 business days. Expedited shipping options are available at checkout.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-light">
+    <div class="container contact-wrapper">
+        <div class="section-header">
+            <span class="subtitle">Connect</span>
+            <h2>Reach Out To Us</h2>
+            <p>Our sleep specialists are ready to assist you.</p>
+        </div>
+        <form id="contact-form" class="sleek-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn-primary form-submit">Send Inquiry</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-brand">LUMIÈRE</div>
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p class="copyright">2026 Lumière Sleep. Crafted for rest.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
